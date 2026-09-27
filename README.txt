@@ -1,14 +1,10 @@
-KAZIBWE IVAN — Personal Website
+KAZIBWE IVAN — Professional Personal Website
 
-How to use:
-1. Keep the folder structure unchanged.
-2. Open index.html in a browser to view the site.
-3. The site is responsive for phones and computers.
-4. Edit index.html/style.css if you want to change content or design.
+GitHub Pages upload:
+1. Replace index.html, style.css, script.js and README.txt in the repository root.
+2. Keep the existing images/ folder and its ivan-01.jpg through ivan-11.jpg files.
+3. Commit directly to the main branch.
+4. Refresh the GitHub Pages website after deployment.
 
-Contact details included:
-0704084962 and 0784897063 — calls & WhatsApp
-vnkazibwe@gmail.com
-TikTok: @mr_kazibwe_ivan
-Facebook: ivan.prom.5
-Instagram: ivan_prom.256
+This rebuild uses a responsive editorial portfolio layout, natural-photo masonry gallery,
+full-screen photo viewer, mobile navigation, and the existing personal information.

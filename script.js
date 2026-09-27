@@ -1,18 +1,43 @@
-const menuBtn = document.querySelector('.menu-btn');
-const nav = document.querySelector('nav');
-menuBtn?.addEventListener('click', () => nav.classList.toggle('open'));
-document.querySelectorAll('nav a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.site-nav');
 
-document.querySelectorAll('.gallery img').forEach(img => {
-  img.addEventListener('click', () => {
-    const overlay = document.createElement('div');
-    overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:100;display:grid;place-items:center;padding:20px;cursor:zoom-out';
-    const big = document.createElement('img');
-    big.src = img.src;
-    big.alt = img.alt;
-    big.style.cssText = 'max-width:95vw;max-height:92vh;object-fit:contain;border-radius:10px';
-    overlay.appendChild(big);
-    overlay.addEventListener('click', () => overlay.remove());
-    document.body.appendChild(overlay);
+menuToggle?.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  document.body.classList.toggle('menu-open', open);
+  menuToggle.setAttribute('aria-expanded', String(open));
+});
+
+document.querySelectorAll('.site-nav a').forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('open');
+    document.body.classList.remove('menu-open');
+    menuToggle?.setAttribute('aria-expanded', 'false');
   });
+});
+
+const lightbox = document.querySelector('.lightbox');
+const lightboxImage = lightbox?.querySelector('img');
+const closeLightbox = () => {
+  lightbox?.classList.remove('open');
+  lightbox?.setAttribute('aria-hidden', 'true');
+  if (lightboxImage) lightboxImage.src = '';
+  document.body.classList.remove('menu-open');
+};
+
+document.querySelectorAll('.gallery-item').forEach(item => {
+  item.addEventListener('click', () => {
+    if (!lightbox || !lightboxImage) return;
+    lightboxImage.src = item.dataset.full;
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('menu-open');
+  });
+});
+
+document.querySelector('.lightbox-close')?.addEventListener('click', closeLightbox);
+lightbox?.addEventListener('click', e => {
+  if (e.target === lightbox) closeLightbox();
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeLightbox();
 });

@@ -83,3 +83,58 @@ img{display:block;max-width:100%}
 @media(max-width:520px){
   .brand{font-size:16px}.hero{padding-top:48px}.hero-actions{display:grid;grid-template-columns:1fr}.btn{width:100%}.hero-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.hero-meta strong{font-size:12px}.hero-meta span{font-size:9px}.portrait-frame{border-radius:22px}.hero-tag{right:8px;bottom:22px;font-size:10px;padding:13px}.section-heading{margin-bottom:40px}.section-heading h2{font-size:48px}.about-copy .large-copy{font-size:23px}.timeline-item{grid-template-columns:38px 1fr;gap:10px}.timeline h3{font-size:20px}.masonry-gallery{columns:1}.gallery-item{margin-bottom:14px;border-radius:17px}.contact-links a{display:grid;gap:5px}.contact-links strong{text-align:left}.site-footer{display:flex;gap:15px;flex-direction:column}
 }
+
+
+/* Compact tappable contact/social icons */
+.contact-icons {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  max-width: 520px;
+}
+.contact-icons .social-icon {
+  min-height: 116px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid var(--line);
+  color: var(--text);
+  text-decoration: none;
+  transition: transform .2s ease, border-color .2s ease, background .2s ease;
+}
+.contact-icons .social-icon:hover,
+.contact-icons .social-icon:focus-visible {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  background: rgba(255,255,255,.035);
+}
+.contact-icons svg {
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
+}
+.contact-icons span {
+  font-size: .72rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  opacity: .72;
+}
+@media (max-width: 600px) {
+  .contact-icons {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: none;
+  }
+  .contact-icons .social-icon {
+    min-height: 92px;
+  }
+  .contact-icons svg {
+    width: 26px;
+    height: 26px;
+  }
+  .contact-icons span {
+    font-size: .62rem;
+  }
+}

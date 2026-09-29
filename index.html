@@ -3,141 +3,187 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="KAZIBWE IVAN — personal portfolio, journey, skills, interests and contact.">
-  <title>KAZIBWE IVAN — Personal Portfolio</title>
+  <meta name="description" content="Mr Kazibwe Ivan — Ugandan web developer, video editor, technology enthusiast and lifelong learner. Explore his skills, projects, experience, education, gallery and contact links.">
+  <meta name="author" content="Mr Kazibwe Ivan">
+  <meta name="theme-color" content="#020b16">
+  <link rel="canonical" href="https://vnkazibwe-coder.github.io/Kazibwe-ivan-/">
+  <meta property="og:title" content="Mr Kazibwe Ivan — Portfolio">
+  <meta property="og:description" content="Mr Kazibwe Ivan — Web Developer, Video Editor and Technology Enthusiast from Uganda.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vnkazibwe-coder.github.io/Kazibwe-ivan-/">
+  <meta property="og:image" content="https://vnkazibwe-coder.github.io/Kazibwe-ivan-/images/ivan-01.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mr Kazibwe Ivan — Portfolio">
+  <meta name="twitter:description" content="Web Developer, Video Editor and Technology Enthusiast from Uganda.">
+  <meta name="twitter:image" content="https://vnkazibwe-coder.github.io/Kazibwe-ivan-/images/ivan-01.jpg">
+  <title>Mr Kazibwe Ivan — Personal Portfolio</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"KAZIBWE IVAN",
+    "alternateName":"Mr Kazibwe Ivan",
+    "birthDate":"2003-03-09",
+    "birthPlace":{"@type":"Place","name":"Uganda"},
+    "nationality":"Ugandan",
+    "url":"https://vnkazibwe-coder.github.io/Kazibwe-ivan-/",
+    "email":"vnkazibwe@gmail.com",
+    "sameAs":[
+      "https://www.tiktok.com/@mr_kazibwe_ivan",
+      "https://www.facebook.com/ivan.prom.5",
+      "https://www.instagram.com/ivan_prom.256"
+    ],
+    "knowsAbout":["Web Development","Video Editing","Microsoft Word","Microsoft Excel"]
+  }
+  </script>
 </head>
 <body>
   <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Kazibwe Ivan home">
-      <span>KAZIBWE</span> IVAN
+    <a class="brand" href="#top" aria-label="Mr Kazibwe Ivan home">
+      <span class="brand-mark">KI</span>
+      <span class="brand-copy"><strong>Mr Kazibwe Ivan 🇺🇬</strong><small>DEVELOPER · EDITOR · CREATOR</small></span>
     </a>
-    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+
     <nav class="site-nav" aria-label="Main navigation">
+      <a class="active" href="#top">Home</a>
       <a href="#about">About</a>
-      <a href="#journey">Journey</a>
       <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
       <a href="#gallery">Gallery</a>
-      <a href="#contact" class="nav-contact">Contact</a>
+      <a href="#contact">Contact</a>
     </nav>
+
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" aria-label="Toggle theme" title="Toggle theme">☾</button>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
   <main>
-    <section class="hero section-pad">
+    <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow">PERSONAL PORTFOLIO · UGANDA</p>
-        <h1>Learning.<br><em>Building.</em><br>Becoming.</h1>
-        <p class="hero-lead">I’m KAZIBWE IVAN — a technology enthusiast, video editor and lifelong learner building practical skills for the future.</p>
+        <p class="eyebrow">HELLO, I'M</p>
+        <h1 id="hero-title">Mr Kazibwe Ivan <span class="flag">🇺🇬</span></h1>
+        <p class="hero-role">Web Developer <b>|</b> Video Editor <b>|</b> Tech Enthusiast</p>
+        <p class="hero-lead">I'm a passionate and dedicated young Ugandan focused on technology, creativity and continuous learning. I build websites, edit videos and use digital tools to turn ideas into reality.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#about">Explore my story <span>↗</span></a>
-          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          <a class="btn btn-primary" href="#projects">View My Work <span>→</span></a>
+          <a class="btn btn-outline" href="#contact">Contact Me <span>→</span></a>
         </div>
-        <div class="hero-meta">
-          <div><strong>09.03.2003</strong><span>Born</span></div>
-          <div><strong>WAKISO</strong><span>Raised in Uganda</span></div>
-          <div><strong>03</strong><span>Core skills</span></div>
+        <div class="quick-socials" aria-label="Social links">
+          <a href="https://wa.me/256704084962" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+          <a href="https://www.tiktok.com/@mr_kazibwe_ivan" target="_blank" rel="noopener" aria-label="TikTok">♪</a>
+          <a href="https://www.facebook.com/ivan.prom.5" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          <a href="https://www.instagram.com/ivan_prom.256" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
+          <a href="mailto:vnkazibwe@gmail.com" aria-label="Email">✉</a>
         </div>
       </div>
 
       <div class="hero-visual">
+        <div class="hero-diagonal"></div>
         <div class="portrait-frame">
-          <img src="images/ivan-01.jpg" alt="KAZIBWE IVAN portrait" width="720" height="1280" fetchpriority="high" decoding="async">
-          <div class="portrait-label">
-            <span>01 / 11</span>
-            <span>IVAN · 2026</span>
-          </div>
+          <img src="images/ivan-01.jpg" alt="Mr Kazibwe Ivan portrait" width="720" height="1280" fetchpriority="high" decoding="async">
         </div>
-        <div class="hero-tag">TECHNOLOGY<br>&amp; GROWTH</div>
+        <div class="hero-slogan" aria-hidden="true">Dream<br>Learn<br>Create<br>Grow</div>
       </div>
     </section>
 
-    <section class="intro-strip">
-      <p>“Learning is a continuous journey.”</p>
-      <span>— KAZIBWE IVAN</span>
-    </section>
-
-    <section class="section section-pad" id="about">
-      <div class="section-heading">
-        <p class="eyebrow">01 · ABOUT</p>
-        <h2>A practical journey,<br><em>still in progress.</em></h2>
+    <section class="section about-section" id="about">
+      <div class="section-title-row">
+        <div>
+          <p class="eyebrow">ABOUT ME</p>
+          <h2>My story <span>—</span></h2>
+        </div>
       </div>
       <div class="about-grid">
         <div class="about-copy">
-          <p class="large-copy">I’m a young and ambitious Ugandan with a strong interest in technology, business, creativity, and continuous learning.</p>
-          <p>Born on 9 March 2003 and raised in Kavumba, Wakiso, my journey has taken me through different experiences in education and work. Each one has helped me develop practical skills, adaptability, and a stronger desire to grow.</p>
-          <p>I’m currently interested in Microsoft Word, Microsoft Excel, and video editing while continuing to build myself through technology and new skills.</p>
+          <p class="large-copy">I'm KAZIBWE IVAN, but you can also call me <strong>Mr Kazibwe Ivan</strong>. I am a Ugandan, a hard worker, and a lifelong learner.</p>
+          <p>Born on 9 March 2003 and raised in Kavumba village, Wakiso, near Kavumba Recreation Center, my journey has taken me through different schools, jobs and practical experiences.</p>
+          <p>I enjoy technology, video editing, music, business, travelling, photography and learning new skills. My goal is to become a highly skilled computer professional who can confidently understand, operate, maintain and manage computer systems.</p>
+          <a class="text-btn" href="#experience">Learn More About Me <span>→</span></a>
         </div>
-        <div class="about-facts">
-          <div><span>Born</span><strong>9 March 2003</strong></div>
-          <div><span>Grew up</span><strong>Kavumba, Wakiso</strong></div>
-          <div><span>Focus</span><strong>Technology &amp; learning</strong></div>
-          <div><span>Goal</span><strong>Computer professional</strong></div>
+        <div class="about-card">
+          <div class="fact"><span class="fact-icon">◎</span><div><small>Name</small><strong>KAZIBWE IVAN<br><em>(Mr Kazibwe Ivan)</em></strong></div></div>
+          <div class="fact"><span class="fact-icon">◫</span><div><small>Born</small><strong>9 March 2003</strong></div></div>
+          <div class="fact"><span class="fact-icon">⌖</span><div><small>Location</small><strong>Kavumba, Wakiso<br><em>Uganda</em></strong></div></div>
+          <div class="fact"><span class="fact-icon">▣</span><div><small>Nationality</small><strong>Ugandan</strong></div></div>
         </div>
+        <div class="about-photo"><img src="images/ivan-02.jpg" alt="Mr Kazibwe Ivan" width="576" height="1280" loading="lazy" decoding="async"></div>
       </div>
     </section>
 
-    <section class="section section-dark section-pad" id="journey">
-      <div class="section-heading">
-        <p class="eyebrow">02 · JOURNEY</p>
-        <h2>Where I’ve<br><em>learned and worked.</em></h2>
-      </div>
-      <div class="timeline">
-        <article class="timeline-item">
-          <span class="timeline-no">01</span>
-          <div><p class="timeline-type">PRIMARY</p><h3>Bright Future Junior School</h3><p>Where my formal education began.</p></div>
-        </article>
-        <article class="timeline-item">
-          <span class="timeline-no">02</span>
-          <div><p class="timeline-type">SECONDARY</p><h3>St. Mary’s Vocational Secondary School</h3><p>Kavumba · Form One to Three.</p></div>
-        </article>
-        <article class="timeline-item">
-          <span class="timeline-no">03</span>
-          <div><p class="timeline-type">SECONDARY</p><h3>Nakwaaya Secondary School</h3><p>Mityana · completed secondary education.</p></div>
-        </article>
-        <article class="timeline-item">
-          <span class="timeline-no">04</span>
-          <div><p class="timeline-type">WORK</p><h3>SB Stationary · Wakiso</h3><p>Bookshop work and everyday customer experience.</p></div>
-        </article>
-        <article class="timeline-item">
-          <span class="timeline-no">05</span>
-          <div><p class="timeline-type">WORK</p><h3>Sanitation Systems Uganda</h3><p>Biodigester and septic-tank installation and shallow-well construction.</p></div>
-        </article>
-        <article class="timeline-item">
-          <span class="timeline-no">06</span>
-          <div><p class="timeline-type">WORK</p><h3>Meat Sales · Nansana Kyebando</h3><p>Practical business and customer-facing experience.</p></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section section-pad" id="skills">
-      <div class="section-heading">
-        <p class="eyebrow">03 · SKILLS</p>
-        <h2>Skills I’m<br><em>building with.</em></h2>
+    <section class="section skills-section" id="skills">
+      <div class="section-title-row">
+        <div><p class="eyebrow">SKILLS</p><h2>What I can <span>do.</span></h2></div>
+        <p class="section-note">Skills I have developed and use.</p>
       </div>
       <div class="skills-grid">
-        <article class="skill-card"><span>01</span><h3>Microsoft Word</h3><p>Document creation, formatting and everyday productivity work.</p></article>
-        <article class="skill-card"><span>02</span><h3>Microsoft Excel</h3><p>Working with spreadsheets, data and practical office tasks.</p></article>
-        <article class="skill-card"><span>03</span><h3>Video Editing</h3><p>Creating and editing videos while continuing to improve my craft.</p></article>
+        <article class="skill-card"><span class="skill-icon">W</span><h3>Microsoft Word</h3><p>Document creation, formatting and everyday productivity work.</p></article>
+        <article class="skill-card"><span class="skill-icon excel">X</span><h3>Microsoft Excel</h3><p>Spreadsheets, formulas, organization and practical office tasks.</p></article>
+        <article class="skill-card"><span class="skill-icon play">▶</span><h3>Video Editing</h3><p>Editing videos for social content and creative projects.</p></article>
+        <article class="skill-card"><span class="skill-icon code">&lt;/&gt;</span><h3>Web Development</h3><p>Building, publishing and improving responsive websites for the web.</p></article>
       </div>
     </section>
 
-    <section class="section section-soft section-pad" id="gallery">
-      <div class="section-heading gallery-heading">
-        <div>
-          <p class="eyebrow">04 · GALLERY</p>
-          <h2>Moments from<br><em>my world.</em></h2>
-        </div>
-        <p class="section-note">A collection of personal photographs. Tap any image to view it full screen.</p>
+    <section class="section projects-section" id="projects">
+      <div class="section-title-row">
+        <div><p class="eyebrow">PROJECTS</p><h2>My recent <span>work.</span></h2></div>
+        <p class="section-note">Real work and skills I have been developing.</p>
       </div>
-      <div class="masonry-gallery">
-        <button class="gallery-item tall" data-full="images/ivan-02.jpg" aria-label="Open photo 2"><img src="images/ivan-02.jpg" alt="KAZIBWE IVAN" width="576" height="1280" loading="lazy" decoding="async"></button>
-        <button class="gallery-item" data-full="images/ivan-03.jpg" aria-label="Open photo 3"><img src="images/ivan-03.jpg" alt="KAZIBWE IVAN" width="576" height="1280" loading="lazy" decoding="async"></button>
+      <div class="projects-grid">
+        <article class="project-card project-featured">
+          <div class="project-visual website-visual"><span>&lt;/&gt;</span><small>GITHUB PAGES</small></div>
+          <div class="project-body"><p class="project-type">WEB DEVELOPMENT</p><h3>Personal Portfolio Website</h3><p>Designed, built, published and optimized my personal portfolio website.</p><a href="#top">View Project <span>→</span></a></div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual edit-visual"><span>▶</span><small>VIDEO EDITING</small></div>
+          <div class="project-body"><p class="project-type">VIDEO EDITING</p><h3>Video Editing Work</h3><p>Editing videos and preparing content for social media and creative use.</p><a href="#contact">Discuss Work <span>→</span></a></div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual office-visual"><span>W · X</span><small>OFFICE TOOLS</small></div>
+          <div class="project-body"><p class="project-type">PRODUCTIVITY</p><h3>Word &amp; Excel Work</h3><p>Practical documents, spreadsheets and everyday digital productivity tasks.</p><a href="#skills">See Skills <span>→</span></a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="split-section">
+      <section class="section experience-panel" id="experience">
+        <p class="eyebrow">EXPERIENCE</p><h2>Where I gained<br><span>practical skills.</span></h2>
+        <div class="list-stack">
+          <article><span>01</span><div><h3>SB Stationary Wakiso</h3><p>Bookshop / stationery work.</p></div></article>
+          <article><span>02</span><div><h3>Sanitation Systems Uganda</h3><p>Biodigester and septic-tank installation &amp; shallow-well construction.</p></div></article>
+          <article><span>03</span><div><h3>Meat Sales · Nansana Kyebando</h3><p>Practical business and customer-facing experience.</p></div></article>
+        </div>
+      </section>
+
+      <section class="section education-panel" id="education">
+        <p class="eyebrow">EDUCATION</p><h2>My school<br><span>journey.</span></h2>
+        <div class="list-stack">
+          <article><span>01</span><div><h3>Bright Future Junior School</h3><p>Primary school.</p></div></article>
+          <article><span>02</span><div><h3>St. Mary's Vocational Secondary School</h3><p>Kavumba · Form 1–3.</p></div></article>
+          <article><span>03</span><div><h3>Nakwaaya Secondary School</h3><p>Mityana · completed secondary education.</p></div></article>
+        </div>
+      </section>
+    </section>
+
+    <section class="section ambition-section">
+      <div class="ambition-copy"><p class="eyebrow">MY AMBITION</p><h2>Building toward a future in <span>technology.</span></h2><p>I want to become a highly skilled computer professional, able to run, understand, maintain and manage computer systems confidently while continuing to learn and create.</p><a class="text-btn dark" href="#contact">Let's connect <span>→</span></a></div>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <div class="section-title-row"><div><p class="eyebrow">GALLERY</p><h2>Some moments <span>from my life.</span></h2></div><p class="section-note">Tap any photo to view it full screen.</p></div>
+      <div class="gallery-grid">
+        <button class="gallery-item large" data-full="images/ivan-03.jpg" aria-label="Open photo 3"><img src="images/ivan-03.jpg" alt="KAZIBWE IVAN" width="576" height="1280" loading="lazy" decoding="async"></button>
         <button class="gallery-item" data-full="images/ivan-04.jpg" aria-label="Open photo 4"><img src="images/ivan-04.jpg" alt="KAZIBWE IVAN" width="853" height="1280" loading="lazy" decoding="async"></button>
         <button class="gallery-item" data-full="images/ivan-05.jpg" aria-label="Open photo 5"><img src="images/ivan-05.jpg" alt="KAZIBWE IVAN" width="853" height="1280" loading="lazy" decoding="async"></button>
         <button class="gallery-item" data-full="images/ivan-06.jpg" aria-label="Open photo 6"><img src="images/ivan-06.jpg" alt="KAZIBWE IVAN" width="852" height="1280" loading="lazy" decoding="async"></button>
@@ -149,54 +195,23 @@
       </div>
     </section>
 
-    <section class="section ambition section-pad">
-      <div class="ambition-inner">
-        <p class="eyebrow">05 · AMBITION</p>
-        <h2>“I want to become a highly skilled computer professional who can confidently understand, operate, maintain, and manage computer systems.”</h2>
-        <a class="text-link" href="#contact">Let’s connect <span>↗</span></a>
-      </div>
-    </section>
-
-    <section class="section section-dark contact section-pad" id="contact">
-      <div class="section-heading">
-        <p class="eyebrow">06 · CONTACT</p>
-        <h2>Let’s stay<br><em>connected.</em></h2>
-      </div>
+    <section class="section contact-section" id="contact">
+      <div class="section-title-row"><div><p class="eyebrow">GET IN TOUCH</p><h2>Let's work together<br><span>or just say hello.</span></h2></div></div>
       <div class="contact-grid">
-        <div class="contact-copy"><p>For work, collaboration, business or simply to say hello, reach me through any of the channels below.</p></div>
-        <div class="contact-icons" aria-label="Contact and social links">
-          <a class="social-icon" href="https://wa.me/256704084962" target="_blank" rel="noopener" aria-label="WhatsApp 0704 084 962" title="WhatsApp 0704 084 962">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.7 11.7 0 0 0 12.17 0C5.68 0 .4 5.27.4 11.77c0 2.07.54 4.09 1.56 5.86L.3 23.8l6.31-1.62a11.75 11.75 0 0 0 5.56 1.41h.01c6.49 0 11.76-5.28 11.76-11.77 0-3.14-1.22-6.08-3.44-8.32ZM12.18 21.6h-.01a9.8 9.8 0 0 1-5-1.37l-.36-.21-3.75.96 1-3.65-.23-.38a9.82 9.82 0 1 1 8.35 4.65Zm5.38-7.36c-.29-.15-1.7-.84-1.96-.94-.26-.1-.45-.15-.64.15-.19.29-.74.94-.9 1.13-.17.19-.33.22-.62.07-.29-.15-1.22-.45-2.32-1.43-.86-.77-1.44-1.71-1.61-2-.17-.29-.02-.45.13-.6.13-.13.29-.33.43-.49.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.15-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.36-.26.29-1 1-1 2.43s1.02 2.82 1.16 3.01c.14.19 2 3.06 4.84 4.29.68.29 1.2.47 1.61.6.68.22 1.3.19 1.79.12.55-.08 1.7-.7 1.94-1.37.24-.68.24-1.26.17-1.38-.07-.12-.26-.19-.55-.34Z"/></svg>
-            <span>WhatsApp</span>
-          </a>
-          <a class="social-icon" href="tel:+256784897063" aria-label="Call 0784 897 063" title="Call 0784 897 063">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.61 21 3 13.39 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2Z"/></svg>
-            <span>Call</span>
-          </a>
-          <a class="social-icon" href="mailto:vnkazibwe@gmail.com" aria-label="Email vnkazibwe@gmail.com" title="Email vnkazibwe@gmail.com">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/></svg>
-            <span>Email</span>
-          </a>
-          <a class="social-icon" href="https://www.tiktok.com/@mr_kazibwe_ivan" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 3c.35 2.04 1.48 3.31 3.5 3.43v3.05c-1.46.14-2.72-.34-3.47-.87v6.33c0 4.47-4.64 6.04-7.57 3.83-1.88-1.42-2.07-4.98-.7-6.59 1.24-1.46 3.43-1.84 5.19-1.08v3.17c-.4-.12-.8-.19-1.2-.14-1.18.15-1.8 1.08-1.53 2.13.5 1.91 4.01 2.11 4.01-.88V3h1.77Z"/></svg>
-            <span>TikTok</span>
-          </a>
-          <a class="social-icon" href="https://www.facebook.com/ivan.prom.5" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3h-3.1V8.08c0-.87.24-1.46 1.5-1.46h1.7V3.94c-.3-.04-1.34-.13-2.55-.13-2.52 0-4.25 1.54-4.25 4.37V10H7v3h2.9v8h3.6Z"/></svg>
-            <span>Facebook</span>
-          </a>
-          <a class="social-icon" href="https://www.instagram.com/ivan_prom.256" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 2h9.6A5.2 5.2 0 0 1 22 7.2v9.6a5.2 5.2 0 0 1-5.2 5.2H7.2A5.2 5.2 0 0 1 2 16.8V7.2A5.2 5.2 0 0 1 7.2 2Zm0 2A3.2 3.2 0 0 0 4 7.2v9.6A3.2 3.2 0 0 0 7.2 20h9.6a3.2 3.2 0 0 0 3.2-3.2V7.2A3.2 3.2 0 0 0 16.8 4H7.2Zm9.05 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg>
-            <span>Instagram</span>
-          </a>
-        </div>
+        <a class="contact-card" href="https://wa.me/256704084962" target="_blank" rel="noopener"><span class="contact-icon">WA</span><div><small>WhatsApp / Call</small><strong>+256 704 084 962</strong></div></a>
+        <a class="contact-card" href="https://wa.me/256784897063" target="_blank" rel="noopener"><span class="contact-icon">WA</span><div><small>WhatsApp Only</small><strong>+256 784 897 063</strong></div></a>
+        <a class="contact-card" href="mailto:vnkazibwe@gmail.com"><span class="contact-icon">✉</span><div><small>Email</small><strong>vnkazibwe@gmail.com</strong></div></a>
+        <a class="contact-card" href="https://www.tiktok.com/@mr_kazibwe_ivan" target="_blank" rel="noopener"><span class="contact-icon">♪</span><div><small>TikTok</small><strong>@mr_kazibwe_ivan</strong></div></a>
+        <a class="contact-card" href="https://www.facebook.com/ivan.prom.5" target="_blank" rel="noopener"><span class="contact-icon">f</span><div><small>Facebook</small><strong>ivan.prom.5</strong></div></a>
+        <a class="contact-card" href="https://www.instagram.com/ivan_prom.256" target="_blank" rel="noopener"><span class="contact-icon">◎</span><div><small>Instagram</small><strong>ivan_prom.256</strong></div></a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <span>© 2026 KAZIBWE IVAN</span>
-    <a href="#top">BACK TO TOP ↑</a>
+    <div class="footer-brand"><span class="brand-mark">KI</span><div><strong>Mr Kazibwe Ivan 🇺🇬</strong><small>BUILD · EDIT · CREATE · GROW</small></div></div>
+    <p>© 2026 Mr Kazibwe Ivan. All rights reserved.</p>
+    <a href="#top">Back to top ↑</a>
   </footer>
 
   <div class="lightbox" aria-hidden="true">
